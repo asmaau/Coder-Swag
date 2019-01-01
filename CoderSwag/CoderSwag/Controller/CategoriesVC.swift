@@ -18,7 +18,7 @@ class CategoriesVC: UIViewController ,UITableViewDataSource, UITableViewDelegate
         categoryTable.dataSource = self
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataService.instances.getCategory().count 
+        return DataService.instances.getCategory().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
