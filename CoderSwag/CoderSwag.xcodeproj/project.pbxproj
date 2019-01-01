@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A013F4B21DB97730071D060 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A013F4A21DB97730071D060 /* ProductCell.swift */; };
+		5A013F4D21DB9C700071D060 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A013F4C21DB9C700071D060 /* Product.swift */; };
 		5AFB119621DB4CCC00F4A74E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB119521DB4CCC00F4A74E /* AppDelegate.swift */; };
 		5AFB119821DB4CCC00F4A74E /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB119721DB4CCC00F4A74E /* CategoriesVC.swift */; };
 		5AFB119B21DB4CCC00F4A74E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB119921DB4CCC00F4A74E /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		5A013F4A21DB97730071D060 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		5A013F4C21DB9C700071D060 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		5AFB119221DB4CCC00F4A74E /* CoderSwag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderSwag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFB119521DB4CCC00F4A74E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AFB119721DB4CCC00F4A74E /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				5AFB11AC21DB67A400F4A74E /* Category.swift */,
+				5A013F4C21DB9C700071D060 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				5AFB11AD21DB67A400F4A74E /* Category.swift in Sources */,
 				5A013F4B21DB97730071D060 /* ProductCell.swift in Sources */,
 				5AFB11B021DB6A2400F4A74E /* DataService.swift in Sources */,
+				5A013F4D21DB9C700071D060 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
