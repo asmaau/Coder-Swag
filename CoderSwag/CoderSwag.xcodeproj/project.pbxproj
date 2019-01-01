@@ -13,6 +13,8 @@
 		5AFB119D21DB4CCD00F4A74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB119C21DB4CCD00F4A74E /* Assets.xcassets */; };
 		5AFB11A021DB4CCD00F4A74E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB119E21DB4CCD00F4A74E /* LaunchScreen.storyboard */; };
 		5AFB11AB21DB55D800F4A74E /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB11AA21DB55D800F4A74E /* CategoryCell.swift */; };
+		5AFB11AD21DB67A400F4A74E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB11AC21DB67A400F4A74E /* Category.swift */; };
+		5AFB11B021DB6A2400F4A74E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB11AF21DB6A2400F4A74E /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5AFB119F21DB4CCD00F4A74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AFB11A121DB4CCD00F4A74E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AFB11AA21DB55D800F4A74E /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		5AFB11AC21DB67A400F4A74E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		5AFB11AF21DB6A2400F4A74E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		5AFB119421DB4CCC00F4A74E /* CoderSwag */ = {
 			isa = PBXGroup;
 			children = (
+				5AFB11AE21DB69FF00F4A74E /* Services */,
 				5AFB11A921DB556300F4A74E /* View */,
 				5AFB11A821DB555900F4A74E /* Model */,
 				5AFB11A721DB554800F4A74E /* Controller */,
@@ -79,6 +84,7 @@
 		5AFB11A821DB555900F4A74E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5AFB11AC21DB67A400F4A74E /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				5AFB11AA21DB55D800F4A74E /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5AFB11AE21DB69FF00F4A74E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5AFB11AF21DB6A2400F4A74E /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,8 @@
 				5AFB119821DB4CCC00F4A74E /* CategoriesVC.swift in Sources */,
 				5AFB119621DB4CCC00F4A74E /* AppDelegate.swift in Sources */,
 				5AFB11AB21DB55D800F4A74E /* CategoryCell.swift in Sources */,
+				5AFB11AD21DB67A400F4A74E /* Category.swift in Sources */,
+				5AFB11B021DB6A2400F4A74E /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

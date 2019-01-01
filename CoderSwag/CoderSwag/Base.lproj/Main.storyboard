@@ -24,19 +24,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TIb-GU-FGl">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TIb-GU-FGl">
                                 <rect key="frame" x="0.0" y="64.5" width="375" height="538.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="144" id="nru-3Z-RfP" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="144" id="nru-3Z-RfP" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nru-3Z-RfP" id="hNj-cV-aUb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="MP9-LJ-eUE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="137.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="137.5" id="EPY-Nl-cFb"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZG-f6-57k">
                                                     <rect key="frame" x="110" y="57" width="155" height="30"/>
@@ -52,15 +55,15 @@
                                             <constraints>
                                                 <constraint firstItem="JZG-f6-57k" firstAttribute="centerY" secondItem="hNj-cV-aUb" secondAttribute="centerY" id="56B-Hp-GRT"/>
                                                 <constraint firstItem="JZG-f6-57k" firstAttribute="centerX" secondItem="hNj-cV-aUb" secondAttribute="centerX" id="9jk-Zy-HNJ"/>
-                                                <constraint firstAttribute="bottom" secondItem="MP9-LJ-eUE" secondAttribute="bottom" id="Eke-3d-ttc"/>
-                                                <constraint firstItem="MP9-LJ-eUE" firstAttribute="top" secondItem="hNj-cV-aUb" secondAttribute="top" id="V8n-D6-Z5x"/>
                                                 <constraint firstItem="MP9-LJ-eUE" firstAttribute="leading" secondItem="hNj-cV-aUb" secondAttribute="leading" id="VH6-y2-fMB"/>
+                                                <constraint firstItem="MP9-LJ-eUE" firstAttribute="top" secondItem="hNj-cV-aUb" secondAttribute="top" constant="3" id="ZIF-WQ-2SV"/>
+                                                <constraint firstAttribute="bottom" secondItem="MP9-LJ-eUE" secondAttribute="bottom" constant="3" id="kJ4-ka-Udb"/>
                                                 <constraint firstAttribute="trailing" secondItem="MP9-LJ-eUE" secondAttribute="trailing" id="yKj-ws-iAE"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="categoryImg" destination="MP9-LJ-eUE" id="lZ8-Ab-gJ0"/>
-                                            <outlet property="categoryLbl" destination="JZG-f6-57k" id="s9c-2J-FYA"/>
+                                            <outlet property="categoryTitle" destination="JZG-f6-57k" id="s9c-2J-FYA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
